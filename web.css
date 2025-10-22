@@ -563,3 +563,23 @@ img{
     }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth; /* smooth scroll */
+  overflow: hidden; /* prevents scrolling with mouse/trackpad */
+}
+
+.bd-container.section {
+  height: 100vh; /* each section fills viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center content */
+  scroll-snap-align: start;
+}
+
